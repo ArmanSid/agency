@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+
+
+      #heading {
+        position: absolute;
+        top: 30px;
+        right: 100px;
+        font-size: 2rem;
+        font-weight: 700;
+        z-index: 20;
+      }
+      #title {
+        display: block;
+        margin: auto;
+        margin-top: 8em;
+        margin-bottom: 2em;
+        text-align: center;
+      }
+      #title h1 {
+        font-size: 3em;
+        padding: 0.5em;
+      }
+      #title p {
+        font-size: 1.4em;
+        font-weight: 150;
+        padding: 1em;
+      }
+      #contact {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-wrap: wrap;
+        margin-top: 5em;
+       padding: 1em;
+      }
+      #contact1 {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        background:rgb(204, 228, 236);
+        height: 35em;
+        width: 28em;
+    /* padding: -0.5em; */
+       margin: 1em;
+       overflow: hidden;
+
+      }
+      #contact2 {
+        display: block;
+        margin: auto;   
+        background:rgb(204, 228, 236);
+      
+        width: 45em;
+    /* padding: -0.5em; */
+        margin: 1em;
+        overflow: hidden;
+
+      }
+      #contact input{
+        padding: 0.6emm;
+    width: 26em;
+    padding: 0.8em;
+
+      }
+.row{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.row div{
+  margin: 1em;
+}
+.contact_info{
+    display: flex;
+    justify-content: cer;
+    justify-content:center;
+    align-items: center;
+
+}
+.inside{
+  width: 70%;
+    font-size: 1.5em;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.contact_info img{
+    width:3em;
+    margin: 1.2em;
+}
+/* restricting width of text area to look good on small screens  */
+.input3{
+  max-width: 85%;
+  display: flex;
+  
+}
+/* ham menu styling starts from here  */
+.container{
+         
+         display: flex;
+         position:fixed;
+         left: 0;
+         top: 0;
+         z-index: 999;
+         flex-direction:column;
+         justify-content:center;
+         align-items:center;
+         height: 100vh;
+         width: 100vw;
+         color: black;
+         background:white;
+          /* hide the menu above the screen by default */
+          transform: translateY(-100%);
+         /* transition adds a little animation when sliding in and out the menu */
+         transition: transform 0.2s ease;
+     
+         
+}
+.toggle{
+        position: absolute;
+         top: 0%;
+         left: 0%;
+         height: 40px;
+         width: 40px;
+         background-color: red;
+         z-index: 1000;
+         border: none;
+         cursor: pointer;
+         /* show the menu image */
+         background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+         background-size: 100%;
+     }
+.showClose {
+    background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+  }
+  /* show navigation on click */
+  .showNav {
+    /* show the menu */
+    transform: translateY(0);
+}
+.menuLink{
+      display: block;
+      color:black;
+      text-align: center;
+  
+      font-size: 3em;
+      padding: 0.6em;
+  
+      text-decoration: none;
+  }
+
+  ul{
+      list-style-type: none;
+  }
+  /* header styling  */
+  .social{
+          padding: 2px 4px ;
+          margin:11px 7px;
+          width: fit-content;
+
+     }
+     .socialbars{
+         position:absolute;
+         top: 35%;
+         left: 0%;
+     }
+     #header{
+         position: absolute;
+         top: 4%;
+         right: 3.5%;
+     }
+
+     #header p{
+         font-size: 46px;
+     }
+
+
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="toggle"></div>
+    <div class="container">
+        <div id="header"><p>Creative Agency </p></div>
+        <ul>
+            <li><a href="do.html" class="menuLink">Home</a></li>
+            <li><a href="work.html" class="menuLink">Work</a></li>
+            <li><a href="services.html" class="menuLink">Service</a></li>
+            <li><a href="contact.html" class="menuLink">Contact</a></li>
+            </ul>
+      <div class="socialbars">
+      <div class="social">
+          <img src="facebook.png" alt="facebook">
+      </div>
+      <div class="social">
+          <img src="twitter.png" alt="twitter">
+      </div>
+      <div class="social">
+          <img src="instagram.png" alt="instagram">
+      </div>
+      </div>  
+    </div>
+    <p id= "heading">Creative Agency </p> 
+    <div id="title">
+      <h1>Contact Us</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+        quisquam.
+      </p>
+    </div>
+    <section id="contact">
+      <div id="contact1">
+        <div class="contact_info">
+          <img src="address.png" alt="">
+          <div class="inside">
+             <h2>Address</h2>
+             <p>Abc Street<br>Agra,India</p>
+          </div>
+        </div>
+        <div class="contact_info">
+          <img src="email.png" alt="">
+          <div class="inside">
+            <h2>Email Adress</h2>
+            <p>abc@gmail.com<br>def@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact_info">
+          <img src="call.png" alt="">
+          <div class="inside">
+            <h2>Call us at:</h2>
+            <p>+5334565<br>+42363442</p>
+          </div>
+        </div>
+      </div>
+      <div id="contact2">
+          <form action="">
+            <div class="row">
+              <div class="input1"><input type=text placeholder="First Name"></div>
+              <div class="input1"><input type=text placeholder="Last Name"></div>
+
+            </div>
+            <div class="row">
+              <div class="input2"><input type=text placeholder="Email"></div>
+              <div class="input2"><input type=text placeholder="Subject"></div>
+
+            </div> 
+            <div class="row">
+              <div class="input3"><textarea placeholder="type your message here" name="" id="" cols="80" rows="15"></textarea></div>
+             
+
+            </div> 
+          </form>
+      </div>
+    </section>
+    <script>
+      var Contain = document.querySelector(".container")
+         var ham = document.querySelector(".toggle")
+         ham.addEventListener("click", toggleHamburger)
+     // toggles hamburger menu in and out when clicking on the hamburger
+         function toggleHamburger(){
+       Contain.classList.toggle("showNav")
+       ham.classList.toggle("showClose")
+     }
+         var menuLinks = document.querySelectorAll(".menuLink")
+         menuLinks.forEach( 
+         function(menuLink) { 
+         menuLink.addEventListener("click", toggleHamburger) 
+         }
+         )
+         </script>
+ 
+  </body>
+</html>

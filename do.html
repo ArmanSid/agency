@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" media="only screen and (max-width:900px)" href="respo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="toggle"></div>
+    <div class="container">
+        <div id="header"><p>Creative Agency </p></div>
+        <ul>
+            <li><a href="#home" class="menuLink">Home</a></li>
+            <li><a href="work.html" class="menuLink">Work</a></li>
+            <li><a href="services.html" class="menuLink">Service</a></li>
+            <li><a href="contact.html" class="menuLink">Contact</a></li>
+            </ul>
+      <div class="socialbars">
+      <div class="social">
+          <img src="facebook.png" alt="facebook">
+      </div>
+      <div class="social">
+          <img src="twitter.png" alt="twitter">
+      </div>
+      <div class="social">
+          <img src="instagram.png" alt="instagram">
+      </div>
+      </div>  
+    </div>
+    <!-- home section  -->
+    <p id= "heading">Creative Agency </p> 
+    <div id="home">
+        
+       <div id="image">
+           <img src="woman2.JPG" alt="">
+
+       </div>
+        
+        <div class="home-content">
+            <h1>We help to achieve <br>your goals.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+                 Quis doloremque laudantium, facilis vel repellat num<br>quam voluptas nobis magnam rem deleniti!</p>
+            <a href="contact.html">Get Started</a>
+        </div>
+    </div>
+    
+     <script>
+     var Contain = document.querySelector(".container")
+        var ham = document.querySelector(".toggle")
+        ham.addEventListener("click", toggleHamburger)
+    // toggles hamburger menu in and out when clicking on the hamburger
+        function toggleHamburger(){
+      Contain.classList.toggle("showNav")
+      ham.classList.toggle("showClose")
+    }
+        var menuLinks = document.querySelectorAll(".menuLink")
+        menuLinks.forEach( 
+        function(menuLink) { 
+        menuLink.addEventListener("click", toggleHamburger) 
+        }
+        )
+        </script>
+</body>
+</html>
