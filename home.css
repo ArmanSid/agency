@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+a:hover{
+    color: red;
+}
 
 p{
     font-size: 35px;
@@ -42,9 +45,7 @@ margin-left: 8rem;
 .home-content p{
      font-size: 24px;
 }
-.home-content h1{
-    /* float: right ; */
-}
+
 .home-content a{
     background: red;
     color: white;
